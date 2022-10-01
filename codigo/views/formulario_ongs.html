@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" 
+    integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style/sweetalert2.min.css">
+    <script src="../js/sweetalert2.min.js"></script>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style/page.css">
+    <link rel="stylesheet" href="../style/ong.css">
+    <link rel="stylesheet" href="../style/style.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!--configuração title-->   
+    <title>AUDITH</title>
+    <link rel="icon" type="./image/png" href="../image/logo.png" />
+
+   
+    
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <img class="navbar-brand" style ='max-height: 80px' src="../image/deaf2.png" alt="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto me-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active labels-nav" aria-current="page" href="home.html">
+                                <i class="fas fa-home" title="Inicio"></i>
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link labels-nav" href="formulario_libras.html">
+                                <i class="fas fa-users" title="Cadastrar-se"></i>
+                                Cadastro aulas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link labels-nav" href="aulas.html">
+                                <i class="fas fa-users" title="Cadastrar-se"></i>
+                                Aulas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link labels-nav" href="formulario_ongs.html">
+                                <i class="fas fa-users" title="Cadastrar-se"></i>
+                                Cadastro ONGs
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link labels-nav" href="ongs.html">
+                                <i class="fas fa-users" title="Cadastrar-se"></i>
+                                ONGs
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link labels-nav" href="libras.html">
+                                <i class="fas fa-atlas" title="Traduzir"></i>
+                                Traduzir
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link labels-nav" href="libras.html">
+                                <i class="fas fa-sign-language" title="Aprender Libras"></i>
+                                Aprender Libras  
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link labels-nav" href="sobre.html">
+                                <i class="fas fa-sign-language" title="Sobre"></i>
+                                Sobre
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-user"></i> 
+                        <span id="user"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container card-page mt-3 p-3">
+        <h1 class="mt-4">Faça parte da nossa equipe!</h1>
+        <div class="row">
+            <div id="msg" class="col-sm-10 offset-sm-1 ">
+                <!--<div class="alert alert-warning">Contato não encontrado.</div>-->
+            </div>
+        </div>
+
+            <div class="form-group row">
+                <div class="col-sm-4">
+                    <label for="inputId">Id</label>
+                    <input type="text" class="form-control" id="inputId" placeholder="ID" disabled>
+                </div>
+                <div class="col-sm-8">
+                    <label for="inputNome">Nome (*)</label>
+                    <input type="text" class="form-control" id="inputNome" required placeholder="Informe o nome do contato">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-5">
+                    <label for="inputTelefone">Telefone (*)</label>
+                    <input type="text" class="form-control cel-sp-mask" id="inputTelefone" required placeholder="Telefone">
+                </div>
+                <div class="col-sm-7">
+                    <label for="inputEmail">E-mail (*)</label>
+                    <input type="email" class="form-control" id="inputEmail" required placeholder="Informe o e-mail">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <label for="inputCidade">Cidade</label>
+                    <input type="text" class="form-control" id="inputCidade" placeholder="Informe a cidade do contato" >
+                </div>
+                <div class="col-sm-6">
+                    <label for="inputCategoria">Categoria</label>
+                    <input type="text" class="form-control" id="inputCategoria" required placeholder="Informe a categoria do contato">
+                </div>
+            </div>
+            <div class="form-group row">    
+                <div class="col-sm-12">
+                    <label for="inputSite">Web Site (*)</label>
+                    <input type="text" class="form-control" id="inputSite" required placeholder="Web Site">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-4">
+                    <small>(*) Campos obrigatórios</small>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <button class="btn btn-success" id="btnInsert" onClick="ongs.funcoes.cadastrarONGs()">Inserir</button>
+                    <button class="btn btn-secondary" id="btnClear" onClick="ongs.funcoes.limparForm()">Limpar Form</button>
+                    <a href="ongs.html" class="btn btn-danger" id="btnClear" >Ver ONGs</a>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/webconfig.js"></script>
+    <script src="../js/ongs.js"></script>
+
+<!-- Rodapé -->
+<footer class="footer-ong">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <p class="textorodape">© 2022 Copyright: <b>AUDITH COMPANY</b>
+        </p>
+    </div>
+</footer>
+
+</body>
+
+</html>

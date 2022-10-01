@@ -1,0 +1,10 @@
+.footer-ong{
+    position: relative;
+    padding-top: 11.5%;
+}
+.card-page{
+    background-color: #0c0c0c75;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px rgba(255, 255, 255, 0.438);
+}

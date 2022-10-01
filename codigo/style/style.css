@@ -1,0 +1,32 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+main {
+    background-image: radial-gradient(circle,  rgb(62, 162, 65),#b2fa8b, #74ec64);
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(0, 13, 36) 10%, rgba(9,121,62,1) 55%, rgb(0, 97, 52) 90%);
+}
+
+h1{
+    color: white;
+
+    font-family:'Courier New', Courier, monospace;
+    font-variant:small-caps;
+    font-display:inherit;
+    margin-left: 30%;
+    align-items: center;
+}
+.container{
+    color: white;
+}
+
+.titulo-page{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
